@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  height: max-content;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.App-header h1{
+  font-weight: bold;
+}
+
+.App-header a{
+  font-size: medium;
+  font-weight: 600;
+}
+
+.header-right{
+  display: flex;
+  gap: 40px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.product-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-wrapper{
+  border-radius: 10px;
+  width: 40%;
+  height: fit-content;
+  padding: 20px 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.product-detail{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.table-container{
+  margin: 30px;
+}
