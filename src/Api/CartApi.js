@@ -17,4 +17,16 @@ export const getProductCartList = async () => {
     console.log({ productList: product });
     return product;
 }
+
+export const removeProductFromCart = async (body) => {
+    try {
+        const response = await axios.post(`${process.env.REACT_APP_BASEURL}/cart/removeProductCart`, body);
+        // console.log('Successfully added to cart:', response.data);
+        alert('Product removed from cart successfully!');
+        return response;
+    } catch (error) {
+        console.error('Error adding to cart: ', error.response || error.message);
+        alert(`Error adding product to cart. Please try again.`);
+    }
+}
   

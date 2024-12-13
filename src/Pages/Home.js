@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getProductList } from '../Api/ProductApi'
 import ProductWrapper from '../Components/ProductWrapper'
-import Navbar from '../Components/Navbar'
 
 const Home = () => {
     const [productList, setProductList] = useState([])
